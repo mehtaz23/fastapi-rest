@@ -31,6 +31,42 @@ Start the server
 ```
 
 
+## API Reference
+
+#### Get all users
+
+```http
+  GET /api/v1/users
+```
+
+#### Create user
+
+```http
+  POST /api/v1/users
+```
+
+#### Update user
+
+```http
+  PUT /api/v1/users${user_id}
+```
+
+| Parameter | Type     | Description                        |
+| :-------- | :------- | :--------------------------------- |
+| `user_id` | `string` | **Required**. Id of user to update |
+
+#### Delete user
+
+```http
+  DELETE /api/v1/users${user_id}
+```
+
+| Parameter | Type     | Description                        |
+| :-------- | :------- | :--------------------------------- |
+| `user_id` | `string` | **Required**. Id of user to delete |
+
+
+
 ## Tech Stack
 
 **Server:** Python, FastAPI, Uvicorn
